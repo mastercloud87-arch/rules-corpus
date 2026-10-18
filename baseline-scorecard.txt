@@ -1,0 +1,175 @@
+rule_id                                        TP  FN  FP
+  cwe1004-cookie-missing-httponly-servlets       1   0   8  <-- FP
+  cwe1004-missing-httponly                       1   0   2  <-- FP
+  cwe1275-cookie-samesite-none                   1   0   0
+  cwe1333-java-pattern-from-string-parameter     1   0   0
+  cwe183-permissive-cors                         1   0   0
+  cwe200-url-rewriting                           1   0   0
+  cwe22-file-access-taint                        1   0   2  <-- FP
+  cwe22-jax-rs-path-traversal                    1   0   0
+  cwe23-tainted-file-path                        1   0   0
+  cwe269-do-privileged-use                       1   0   0
+  cwe276-overly-permissive-file-permission       1   0   0
+  cwe287-anonymous-ldap-bind                     1   0   0
+  cwe297-insecure-smtp-connection                1   0   0
+  cwe319-bypass-tls-verification                 1   0   0
+  cwe319-disallow-old-tls-versions1              1   0   1  <-- FP
+  cwe319-disallow-old-tls-versions2              1   0   0
+  cwe319-ftp-request                             1   0   0
+  cwe319-http-components-request                 1   0   0
+  cwe319-httpclient-http-request                 1   0   0
+  cwe319-httpget-http-request                    1   0   1  <-- FP
+  cwe319-httpurlconnection-http-request          1   0   0
+  cwe319-socket-request                          1   0   0
+  cwe319-spring-ftp-request                      1   0   0
+  cwe319-spring-http-request                     1   0   0
+  cwe319-telnet-request                          1   0   0
+  cwe319-tls-renegotiation                       1   0   0
+  cwe319-unencrypted-socket                      1   0   1  <-- FP
+  cwe319-unirest-http-request                    1   0   0
+  cwe323-gcm-detection                           1   0   3  <-- FP
+  cwe323-gcm-nonce-reuse                         1   0   0
+  cwe326-defaulthttpclient-is-deprecated         1   0   0
+  cwe326-weak-ssl-context                        1   0   2  <-- FP
+  cwe327-avoid-implementing-custom-digests       1   0   0
+  cwe327-ecb-cipher                              1   0   0
+  cwe327-java-jwt-none-alg                       0   1   0  <-- FN
+  cwe327-jjwt-none-alg                           1   0   0
+  cwe327-md5-used-as-password                    1   0   0
+  cwe327-no-null-cipher                          1   0   0
+  cwe327-use-of-blowfish                         1   0   0
+  cwe328-use-of-md5                              1   0   0
+  cwe328-use-of-md5-digest-utils                 1   0   0
+  cwe330-weak-random                             1   0   2  <-- FP
+  cwe345-java-jwt-decode-without-verify          0   1   0  <-- FN
+  cwe352-cookie-missing-samesite                 1   0  10  <-- FP
+  cwe352-unrestricted-request-mapping            1   0   0
+  cwe454-tainted-env-from-http-request           0   1   0  <-- FN
+  cwe470-unsafe-reflection                       1   0   0
+  cwe489-active-debug-code-printstacktrace       0   1   2  <-- FN  <-- FP
+  cwe501-tainted-session-from-http-request       1   0   0
+  cwe502-default-resteasy-provider-abuse         0   1   0  <-- FN
+  cwe502-insecure-jms-deserialization            0   1   0  <-- FN
+  cwe502-insecure-resteasy-deserialization       0   1   0  <-- FN
+  cwe502-jackson-unsafe-deserialization          1   0   0
+  cwe502-kryo-deserialization-deep               0   1   0  <-- FN
+  cwe502-object-deserialization                  1   0   2  <-- FP
+  cwe502-objectinputstream-deserialization-servlets   0   1   0  <-- FN
+  cwe502-server-dangerous-object-deserialization   1   0   0
+  cwe502-use-snakeyaml-constructor               1   0   0
+  cwe502-xstream-anytype-deserialization-deep    0   1   0  <-- FN
+  cwe601-jax-rs-jax-rs-open-redirect-uri-params   0   1   0  <-- FN
+  cwe601-open-redirect                           0   1   0  <-- FN
+  cwe601-spring-unvalidated-redirect             0   1   0  <-- FN
+  cwe611-documentbuilderfactory-disallow-doctype-decl-missing   1   0   2  <-- FP
+  cwe611-documentbuilderfactory-external-general-entities-true   1   0   0
+  cwe611-saxbuilder-xxe                          1   0   0
+  cwe611-saxparserfactory-disallow-doctype-decl-missing   1   0   0
+  cwe611-saxreader-xxe                           0   1   0  <-- FN
+  cwe611-schemafactory-xxe                       1   0   0
+  cwe611-tainted-validator-xxe-servlet           1   0   0
+  cwe611-transformerfactory-dtds-not-disabled    1   0   1  <-- FP
+  cwe611-validator-xxe                           1   0   0
+  cwe611-xml-custom-entityresolver               1   0   0
+  cwe611-xml-decoder                             1   0   0
+  cwe611-xmlinputfactory-external-entities-enabled   1   0   0
+  cwe611-xmlinputfactory-possible-xxe            1   0   0
+  cwe614-missing-secure                          0   1   4  <-- FN  <-- FP
+  cwe704-bad-hexa-conversion                     1   0   0
+  cwe79-jax-rs-jax-rs-xss-uri-params             1   0   0
+  cwe79-tainted-html-string                      1   0   0
+  cwe79-tainted-html-string-responsebody         1   0   0
+  cwe79-xssrequestwrapper-is-insecure            1   0   0
+  cwe798-base64-encoded-hardcoded-secret         0   1   0  <-- FN
+  cwe798-drivermanager-hardcoded-secret          1   0   0
+  cwe798-hardcoded-connection-password-jdo       1   0   0
+  cwe798-hardcoded-secret-in-credentials         1   0   0
+  cwe798-hardcoded-secret-in-request-header      1   0   0
+  cwe798-hardcoded-secret-key-spec               1   0   0
+  cwe798-httprequest-hardcoded-secret-in-request-header   1   0   0
+  cwe798-java-jwt-hardcoded-secret               1   0   0
+  cwe798-jedis-auth-hardcoded-secret             1   0   0
+  cwe798-jedis-hardcoded-uri                     1   0   0
+  cwe798-jedis-jedisclientconfig-hardcoded-password   1   0   0
+  cwe798-jedis-jedisfactory-hardcoded-password   1   0   0
+  cwe798-jsch-hardcoded-secret                   1   0   0
+  cwe798-mysql-jdbc-hardcoded-secret             1   0   0
+  cwe798-passwordauthentication-hardcoded-password   1   0   0
+  cwe798-properties-hardcoded-secret             1   0   2  <-- FP
+  cwe798-system-setproperty-hardcoded-secret     1   0   0
+  cwe798-urlconnection-hardcoded-secret-in-request-header   1   0   0
+  cwe89-find-sql-string-concatenation            1   0   0
+  cwe89-hibernate-sqli                           0   1   0  <-- FN
+  cwe89-jdbc-sql-formatted-string                1   0   0
+  cwe89-jdbc-sqli                                1   0   1  <-- FP
+  cwe89-jdo-sqli                                 0   1   0  <-- FN
+  cwe89-jdo-sqli-spring                          0   1   0  <-- FN
+  cwe89-jpa-sqli                                 0   1   0  <-- FN
+  cwe89-nosql-injection-servlets                 0   1   0  <-- FN
+  cwe89-turbine-sqli                             1   0   0
+  cwe89-vertx-sqli                               1   0   0
+  cwe90-ldap-entry-poisoning                     1   0   0
+  cwe918-tainted-ssrf-spring-add                 0   1   0  <-- FN
+  cwe93-crlf-injection-logs-deep                 1   0   0
+  cwe94-dangerous-groovy-shell                   0   1   0  <-- FN
+  cwe94-el-injection                             0   1   0  <-- FN
+  cwe94-script-engine-injection                  1   0   1  <-- FP
+  cwe94-spel-injection                           1   0   1  <-- FP
+  cwe943-mongodb-nosqli                          0   1   0  <-- FN
+  cwe95-seam-log-injection                       0   1   0  <-- FN
+  cwe95-spring-tainted-code-execution            1   0   0
+  java/cleartext-storage-in-cookie               1   0   0
+  java/command-line-injection                    1   0   0
+  java/error-message-exposure                    1   0   0
+  java/http-response-splitting                   1   0   0
+  java/implicit-cast-in-compound-assignment      1   0   0
+  java/insecure-bean-validation                  1   0   0
+  java/insecure-cookie                           1   0  10  <-- FP
+  java/insecure-ldap-auth                        1   0   0
+  java/insecure-randomness                       1   0   0
+  java/insecure-trustmanager                     0   1   0  <-- FN
+  java/insufficient-key-size                     1   0   0
+  java/jexl-expression-injection                 0   1   0  <-- FN
+  java/jhipster-prng                             0   1   1  <-- FN  <-- FP
+  java/jndi-injection                            1   0   0
+  java/ldap-injection                            0   1   0  <-- FN
+  java/missing-jwt-signature-check               1   0   0
+  java/mvel-expression-injection                 0   1   0  <-- FN
+  java/netty-http-request-or-response-splitting   0   1   0  <-- FN
+  java/ognl-injection                            0   1   0  <-- FN
+  java/overly-large-range                        1   0   0
+  java/partial-path-traversal-from-remote        0   1   0  <-- FN
+  java/path-injection                            0   1   0  <-- FN
+  java/polynomial-redos                          0   1   0  <-- FN
+  java/predictable-seed                          0   1   0  <-- FN
+  java/redos                                     0   1   0  <-- FN
+  java/regex-injection                           1   0   2  <-- FP
+  java/rsa-without-oaep                          1   0   0
+  java/sensitive-cookie-not-httponly             1   0   0
+  java/server-side-template-injection            0   1   0  <-- FN
+  java/spel-expression-injection                 1   0   0
+  java/spring-boot-exposed-actuators             0   1   0  <-- FN
+  java/spring-disabled-csrf-protection           1   0   0
+  java/sql-injection                             1   0   0
+  java/ssrf                                      1   0   0
+  java/stack-trace-exposure                      1   0   1  <-- FP
+  java/static-initialization-vector              1   0   0
+  java/tainted-format-string                     1   0   1  <-- FP
+  java/tainted-numeric-cast                      1   0   0
+  java/tainted-permissions-check                 1   0   0
+  java/unsafe-deserialization                    1   0   0
+  java/unsafe-hostname-verification              0   1   0  <-- FN
+  java/unvalidated-url-forward                   1   0   0
+  java/unvalidated-url-redirection               1   0   0
+  java/weak-cryptographic-algorithm              1   0   1  <-- FP
+  java/world-writable-file-read                  1   0   0
+  java/xml/xpath-injection                       0   1   0  <-- FN
+  java/xslt-injection                            1   0   0
+  java/xss                                       1   0   0
+  java/xxe                                       1   0   1  <-- FP
+  java/zipslip                                   0   1   1  <-- FN  <-- FP
+  TOTAL                                        126  43  66
+
+rules with an expected finding: 169  |  clean rules: 103
+rules FN (missed positive): ['cwe327-java-jwt-none-alg', 'cwe345-java-jwt-decode-without-verify', 'cwe454-tainted-env-from-http-request', 'cwe489-active-debug-code-printstacktrace', 'cwe502-default-resteasy-provider-abuse', 'cwe502-insecure-jms-deserialization', 'cwe502-insecure-resteasy-deserialization', 'cwe502-kryo-deserialization-deep', 'cwe502-objectinputstream-deserialization-servlets', 'cwe502-xstream-anytype-deserialization-deep', 'cwe601-jax-rs-jax-rs-open-redirect-uri-params', 'cwe601-open-redirect', 'cwe601-spring-unvalidated-redirect', 'cwe611-saxreader-xxe', 'cwe614-missing-secure', 'cwe798-base64-encoded-hardcoded-secret', 'cwe89-hibernate-sqli', 'cwe89-jdo-sqli', 'cwe89-jdo-sqli-spring', 'cwe89-jpa-sqli', 'cwe89-nosql-injection-servlets', 'cwe918-tainted-ssrf-spring-add', 'cwe94-dangerous-groovy-shell', 'cwe94-el-injection', 'cwe943-mongodb-nosqli', 'cwe95-seam-log-injection', 'java/insecure-trustmanager', 'java/jexl-expression-injection', 'java/jhipster-prng', 'java/ldap-injection', 'java/mvel-expression-injection', 'java/netty-http-request-or-response-splitting', 'java/ognl-injection', 'java/partial-path-traversal-from-remote', 'java/path-injection', 'java/polynomial-redos', 'java/predictable-seed', 'java/redos', 'java/server-side-template-injection', 'java/spring-boot-exposed-actuators', 'java/unsafe-hostname-verification', 'java/xml/xpath-injection', 'java/zipslip']
+rules FP (flagged negative): ['cwe1004-cookie-missing-httponly-servlets', 'cwe1004-missing-httponly', 'cwe22-file-access-taint', 'cwe319-disallow-old-tls-versions1', 'cwe319-httpget-http-request', 'cwe319-unencrypted-socket', 'cwe323-gcm-detection', 'cwe326-weak-ssl-context', 'cwe330-weak-random', 'cwe352-cookie-missing-samesite', 'cwe489-active-debug-code-printstacktrace', 'cwe502-object-deserialization', 'cwe611-documentbuilderfactory-disallow-doctype-decl-missing', 'cwe611-transformerfactory-dtds-not-disabled', 'cwe614-missing-secure', 'cwe798-properties-hardcoded-secret', 'cwe89-jdbc-sqli', 'cwe94-script-engine-injection', 'cwe94-spel-injection', 'java/insecure-cookie', 'java/jhipster-prng', 'java/regex-injection', 'java/stack-trace-exposure', 'java/tainted-format-string', 'java/weak-cryptographic-algorithm', 'java/xxe', 'java/zipslip']
